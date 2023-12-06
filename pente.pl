@@ -177,7 +177,7 @@ Algorithm:  1) Obtain the file name from the user.
 Assistance Received: None
 ********************************************************************* */
 get_load_file_name(LoadFileName) :-
-    write('Enter the file name load from (without the .txt & first letter lowercase): '),
+    write('Enter the file name to load from (without the .txt & first letter lowercase): '),
     read(Input),
     Extension = '.txt',
     atom_concat(Input, Extension, LoadFileName),
